@@ -1,0 +1,139 @@
+<!doctype html>
+<html lang="zh-CN">
+<head>
+<meta charset="utf-8">
+<link rel="icon" href="data:,">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<meta name="description" content="thinkplus App 项目概述、承接内容、四条独立时间轴及项目相关人员。">
+<title>thinkplus App · 项目概览</title>
+<style>
+:root{--ink:#152b2a;--muted:#566b68;--green:#155e51;--soft:#eaf1eb;--paper:#f7f8f3;--line:#d5dfd8;--orange:#a44822}*{box-sizing:border-box}html{scroll-behavior:smooth;scroll-padding-top:90px}body{margin:0;background:var(--paper);color:var(--ink);font-family:"Microsoft YaHei","PingFang SC",system-ui,sans-serif;font-size:15px;line-height:1.85}a{color:inherit;text-underline-offset:4px}button{font:inherit;cursor:pointer}header{background:#f7f8f3f5;border-bottom:1px solid var(--line);position:sticky;top:0;z-index:5}.bar{max-width:1200px;margin:auto;min-height:70px;padding:12px 32px;display:flex;align-items:center;justify-content:space-between;gap:20px}.brand{font-size:23px;font-weight:800;letter-spacing:-1px}.brand span{color:var(--green)}nav{display:flex;gap:24px;align-items:center;font-size:13px}nav a{text-decoration:none}nav a:hover{color:var(--green);text-decoration:underline}.print{border:1px solid #b8c9bd;background:transparent;padding:5px 13px;border-radius:4px;color:var(--green)}main{max-width:1200px;margin:auto;padding:0 32px}.hero{padding:64px 0 42px;display:grid;grid-template-columns:1fr 1fr;gap:60px;align-items:center}.eyebrow{font-size:12px;font-weight:700;letter-spacing:2px;color:var(--green)}h1{font-size:clamp(32px,4vw,49px);line-height:1.35;letter-spacing:-1.5px;margin:20px 0}h1 span{display:block;color:var(--green)}.lead{font-size:17px;line-height:1.95;color:#3b5550;max-width:650px}.meta{display:flex;gap:8px;flex-wrap:wrap;margin-top:24px}.pill{display:inline-block;padding:3px 12px;border:1px solid #bdcec2;border-radius:30px;font-size:12px;color:var(--green)}.diagram{background:var(--green);color:white;padding:30px;border-radius:8px}.diagram small{color:#d0e1d7;font-size:12px}.core{padding:22px 0;border-bottom:1px solid #659386}.core strong{display:block;font-size:29px;line-height:1.5}.core p{font-size:13px;margin:6px 0 0;color:#d8e9df}.devices{display:flex;justify-content:space-between;gap:12px;padding:22px 0 18px}.device{flex:1;border:1px solid #76a394;text-align:center;padding:12px 4px;border-radius:4px;font-size:14px}.diagram-foot{font-size:12px;color:#d0e1d7}.summary{border-left:4px solid var(--green);background:var(--soft);padding:22px 26px;font-size:17px}.summary strong{color:var(--green)}section{padding:46px 0;border-bottom:1px solid var(--line);scroll-margin-top:10px}.section-head{display:flex;gap:18px;align-items:baseline;margin-bottom:24px}.num{font-size:13px;color:var(--green);font-weight:700;border-top:2px solid var(--green);padding-top:5px}h2{font-size:27px;letter-spacing:-.6px;line-height:1.5;margin:0}h3{font-size:17px;line-height:1.6;margin:0 0 10px}p{margin:0 0 14px}.section-sub{font-size:14px;color:var(--muted);margin-top:-12px;margin-bottom:24px}.cols{display:grid;grid-template-columns:repeat(3,1fr);gap:28px}.cols article+article{border-left:1px solid var(--line);padding-left:28px}.label{color:var(--green);font-size:12px;font-weight:700;letter-spacing:1px;margin-bottom:9px}.muted{color:var(--muted)}.position{display:grid;grid-template-columns:.85fr 1.5fr;gap:42px}.statement{font-size:27px;line-height:1.7;font-weight:700;color:var(--green)}.facts{margin:0}.facts div{display:grid;grid-template-columns:90px 1fr;gap:20px;padding:14px 0;border-bottom:1px solid var(--line)}.facts div:first-child{padding-top:0}.facts dt{font-weight:700}.facts dd{margin:0;color:#435c56}.table-wrap{overflow-x:auto}table{border-collapse:collapse;width:100%;font-size:14px;text-align:left}th{color:var(--green);background:#e9efe8;font-weight:700}td,th{padding:15px 18px;border-bottom:1px solid var(--line);vertical-align:top}th:first-child{width:17%}td strong{display:block;margin-bottom:3px}.note{font-size:13px;color:var(--muted);margin-top:16px}.workflow{display:grid;grid-template-columns:repeat(3,1fr);gap:16px;margin:26px 0 0}.step{border-top:2px solid var(--green);padding:15px 0}.step small{color:var(--green);font-weight:700}.step h3{margin:8px 0}.step p{font-size:14px;color:var(--muted);margin:0}.nature{background:#173f38;color:#eff6f0;padding:28px 30px;border-radius:6px;display:grid;grid-template-columns:1fr 1fr;gap:38px}.nature .label{color:#b8dcc5}.nature h3{font-size:23px}.nature p{color:#d2e3d9;font-size:14px;margin:0}.phase-note{font-size:14px;margin:18px 0 0;color:var(--muted)}.milestones{display:grid;grid-template-columns:repeat(4,1fr);gap:0;margin-bottom:26px}.milestone{border-top:2px solid #92b39e;padding:17px 18px 0 0;position:relative}.milestone:before{content:"";position:absolute;top:-5px;left:0;width:8px;height:8px;border-radius:50%;background:var(--green)}.milestone time{font-size:12px;color:var(--green);font-weight:700}.milestone h3{margin:6px 0;font-size:16px}.milestone p{font-size:13px;color:var(--muted)}.compact td,.compact th{padding:11px 15px}.compact th:first-child{width:18%}.alert{background:#f4eadc;border-left:3px solid var(--orange);padding:18px 22px;margin-top:24px;font-size:14px}.alert h3{color:#873e20;margin-bottom:7px}.alert p:last-child{margin-bottom:0}.checklist{display:grid;grid-template-columns:1fr 1fr;gap:0 36px}.check{padding:16px 0;border-bottom:1px solid var(--line)}.check h3{font-size:15px;margin-bottom:5px}.check p{font-size:14px;color:var(--muted);margin:0}.sources{font-size:13px;color:var(--muted)}.sources ol{padding-left:20px}.sources li{margin:8px 0}.source-tag{font-size:11px;color:var(--green);padding:2px 7px;background:#e5ede4;border-radius:3px;margin-left:7px;white-space:nowrap}footer{max-width:1200px;margin:0 auto;padding:25px 32px 45px;display:flex;justify-content:space-between;gap:18px;font-size:12px;color:var(--muted)}a:focus-visible,button:focus-visible{outline:3px solid #bd713f;outline-offset:5px}@media(max-width:800px){.bar{padding:12px 22px}nav{gap:14px}nav a{display:none}main{padding:0 22px}.hero{grid-template-columns:1fr;gap:24px;padding-top:35px}.diagram{padding:24px}.cols,.position,.nature{grid-template-columns:1fr;gap:24px}.cols article+article{padding:20px 0 0;border-left:0;border-top:1px solid var(--line)}.workflow{grid-template-columns:1fr;gap:8px}.milestones{grid-template-columns:1fr 1fr;gap:25px 10px}.checklist{grid-template-columns:1fr}section{padding:34px 0}.summary{font-size:16px;padding:18px}th,td{padding:12px;min-width:125px}.section-head{gap:12px}h2{font-size:23px}.facts div{grid-template-columns:75px 1fr;gap:12px}footer{padding:24px 22px;flex-direction:column}.nature{padding:24px}.statement{font-size:24px}}@media print{body{background:white;font-size:11px}header{position:static}.bar{padding:10px 0;min-height:40px}nav{display:none}main{padding:0}.hero{padding:24px 0;gap:28px}h1{font-size:30px}.lead,.summary{font-size:13px}section{padding:22px 0}h2{font-size:22px}h3{font-size:14px}table{font-size:11px}td,th{padding:9px}.diagram,.nature,.summary,.alert,th{-webkit-print-color-adjust:exact;print-color-adjust:exact}.hero,.nature,.check,.step,.alert,tr{break-inside:avoid}.note,.sources,.phase-note{font-size:11px}footer{padding:18px 0}.section-head{break-after:avoid}a{text-decoration:none}}
+
+/* Four independent timeline tracks, preserving the original presentation. */
+.overview-text{font-size:17px;line-height:2;max-width:1040px;margin:0}.workflow{margin-top:0}.block{margin-top:36px}.block-head{display:flex;align-items:baseline;flex-wrap:wrap;gap:14px;padding-bottom:10px;border-bottom:1px solid var(--line)}.block-title{font-size:17px;font-weight:700}.block-title:before{content:"";display:inline-block;width:8px;height:8px;background:var(--green);border-radius:50%;margin-right:9px}.block-owner{font-size:12px;color:var(--muted)}.tl{position:relative;margin-top:27px;padding-bottom:8px}.axis{position:absolute;top:8px;left:3%;right:3%;height:2px;background:var(--line)}.cols{display:flex;position:relative;z-index:1;gap:0}.col{flex:1;min-width:0;padding:0 6px;text-align:center}.dot{position:relative;width:16px;height:16px;margin:0 auto;border-radius:50%;background:var(--paper);border:2px solid var(--green)}.dot:after{content:"";position:absolute;inset:3px;border-radius:50%;background:var(--green)}.dot.star{border-color:#bc4c37}.dot.star:after{background:#bc4c37}.dot.current{box-shadow:0 0 0 3px var(--paper),0 0 0 6px #155e5133}.cur{display:inline-block;font-size:11px;color:white;background:var(--green);border-radius:3px;padding:0 7px;font-weight:700;margin-top:11px}.d{font-weight:700;color:var(--green);font-size:12px;margin-top:14px}.cur+.d{margin-top:3px}.n{font-size:12px;margin-top:5px;line-height:1.7}.n.red{color:#ac3c2a;font-weight:700}.timeline-legend{border-top:1px solid var(--line);margin-top:30px;padding-top:16px;color:var(--muted);font-size:12px}.legend-current{color:var(--green)}.legend-key{color:#bc4c37}.people th:nth-child(1){width:19%}.people th:nth-child(2){width:15%}.sources{border-bottom:0;padding:24px 0 0}.sources p{margin:0}
+@media(max-width:800px){.overview-text{font-size:16px}.tl{overflow-x:auto;padding-top:8px;padding-bottom:15px}.cols{min-width:850px}.axis{top:16px;left:25px;width:800px;right:auto}.block-owner{font-size:11px}.block{margin-top:28px}.people{min-width:620px}}
+@media print{.tl{overflow:visible}.cols{min-width:0}.axis{width:auto;top:8px;left:3%;right:3%}.block{break-inside:avoid;margin-top:22px}.n{font-size:9px}.d{font-size:10px}.cur{font-size:9px}.overview-text{font-size:13px}.people{min-width:0}.block-owner{font-size:10px}.block-title{font-size:14px}.cur,.dot{-webkit-print-color-adjust:exact;print-color-adjust:exact}}
+
+
+.report-card {
+  background: #fcfaf9;
+  border-left: 6px solid #c93626;
+  border-radius: 14px;
+  padding: 26px 22px;
+  box-shadow: 0 5px 24px #8829230e;
+}
+.report-heading, .report-details {
+  display: grid;
+  grid-template-columns: 1.12fr 1fr;
+  gap: 16px;
+}
+.report-heading { align-items: start; margin-bottom: 22px; }
+.report-brand {
+  justify-self: start;
+  border-radius: 10px;
+  background: #ca3526;
+  color: white;
+  padding: 4px 14px;
+  font-family: system-ui, sans-serif;
+  font-size: 23px;
+  font-weight: 800;
+  line-height: 1.5;
+  box-shadow: 0 6px 14px #ca352633;
+}
+.report-heading h2 {
+  color: var(--green);
+  font-size: clamp(18px, 1.85vw, 26px);
+  line-height: 1.32;
+  font-weight: 800;
+}
+.report-details dl { margin: 0; min-width: 0; }
+.report-details dl > div { padding: 8px 0; border-bottom: 1px solid #eedfda; }
+.report-details dl > div:last-child { border-bottom: 0; }
+.report-details dt { color: var(--muted); font-size: 12px; }
+.report-details dd { margin: 0; color: var(--ink); font-size: 14px; font-weight: 700; line-height: 1.5; }
+@media (max-width: 420px) {
+  .report-card { padding: 22px 16px; }
+  .report-heading, .report-details { gap: 12px; }
+  .report-details dd { font-size: 13px; }
+}
+@media print {
+  .report-card { break-inside: avoid; box-shadow: none; }
+  .report-brand { print-color-adjust: exact; -webkit-print-color-adjust: exact; }
+}
+</style>
+</head>
+<body>
+<header><div class="bar"><a class="brand" href="#top" aria-label="thinkplus 项目概览首页">think<span>plus</span></a><nav aria-label="页面导航"><a href="#background">项目概述</a><a href="#plan">上线计划</a><a href="#deliverables">交付物</a><a href="#coordination">项目人员</a><button class="print" type="button" onclick="window.print()">打印 / 导出 PDF</button></nav></div></header>
+<main id="top">
+<div class="hero"><div><div class="eyebrow">PROJECT OVERVIEW / 项目概览</div><h1>thinkplus</h1></div><aside class="report-card" aria-labelledby="report-title">
+  <div class="report-heading">
+    <span class="report-brand">Lenovo</span>
+    <h2 id="report-title">thinkplus<br>内部汇报</h2>
+  </div>
+  <div class="report-details">
+    <dl class="report-team">
+      <div><dt>部门</dt><dd>设计与体验管理中心</dd></div>
+      <div><dt>汇报性质</dt><dd>GUI视觉评审</dd></div>
+      <div><dt>汇报人</dt><dd>燕霞、水秀、杨哲、学敏</dd></div>
+    </dl>
+    <dl class="report-review">
+      <div><dt>评审时间</dt><dd>11月19日</dd></div>
+    </dl>
+  </div>
+</aside></div>
+
+
+<section id="background"><div class="section-head"><span class="num">01</span><h2>项目概述</h2></div><p class="overview-text">thinkplus App（名称待定）是一款可持续扩展的独立品牌 App，承接联想未来计划上线的耳机、乐记卡、智墨屏等硬件设备。短期聚焦耳机设备，软件架构参考智享穿戴开发。</p></section>
+
+<section id="plan"><div class="section-head"><span class="num">02</span><h2>首版计划与关键时间轴</h2></div><p class="section-sub">目标 2027 年 1 月 31 日全端上线</p>
+<div class="block">
+    <div class="block-head">
+      <span class="block-title">软件开发 / 测试</span>
+      <span class="block-owner"><b>负责人：</b>来酷·杨戬</span>
+    </div>
+    <div class="tl"><div class="axis"></div><div class="cols"><div class="col"><div class="dot"></div><div class="d">10月20日</div><div class="n">完成接口定义</div></div><div class="col"><div class="dot"></div><div class="d">10月22日</div><div class="n">启动coding</div></div><div class="col"><div class="dot"></div><div class="d">11月15日</div><div class="n">完成智享家APP框架码</div></div><div class="col"><div class="dot current"></div><div class="cur">当前节点</div><div class="d">11月20日</div><div class="n">完成第三方&amp;Android/iOS SDK编码联调</div></div><div class="col"><div class="dot"></div><div class="d">11月30日</div><div class="n">启动申请SSRB</div></div><div class="col"><div class="dot star"></div><div class="d">12月25日</div><div class="n red">完成软件全功能开发</div></div><div class="col"><div class="dot"></div><div class="d">1月15日</div><div class="n">完成软件全功能测试</div></div><div class="col"><div class="dot star"></div><div class="d">1月31日</div><div class="n red">全端上线</div></div></div></div>
+  </div>
+<div class="block">
+    <div class="block-head">
+      <span class="block-title">UI</span>
+      <span class="block-owner"><b>负责人：</b>设计中心·刘水秀</span>
+    </div>
+    <div class="tl"><div class="axis"></div><div class="cols"><div class="col"><div class="dot"></div><div class="d">9月30日</div><div class="n">UI设计启动</div></div><div class="col"><div class="dot"></div><div class="d">10月20日</div><div class="n">交互设计提案</div></div><div class="col"><div class="dot"></div><div class="d">11月4日</div><div class="n">确定产品架构</div></div><div class="col"><div class="dot current"></div><div class="cur">当前节点</div><div class="d">11月19日—11月20日</div><div class="n">视觉GUI内部评审</div></div><div class="col"><div class="dot current"></div><div class="cur">当前节点</div><div class="d">下周（11/23—11/29）</div><div class="n">视觉GUI交付评审</div></div><div class="col"><div class="dot"></div><div class="d">12月4日</div><div class="n">核心场景页面输出</div></div><div class="col"><div class="dot"></div><div class="d">12月13日—12月18日</div><div class="n">设计UI交付</div></div><div class="col"><div class="dot star"></div><div class="d">12月25日</div><div class="n red">设计走查</div></div></div></div>
+  </div>
+<div class="block">
+  <div class="block-head">
+    <span class="block-title">UE</span>
+    <span class="block-owner"><b>负责人：</b>设计中心·燕霞</span>
+  </div>
+  <div class="tl">
+    <div class="axis"></div>
+    <div class="cols">
+        <div class="col"><div class="dot"></div><div class="d">9月30日</div><div class="n">项目启动</div></div>
+        <div class="col"><div class="dot"></div><div class="d">11月2日—6日</div><div class="n">星芒供应商版本评估</div></div>
+        <div class="col"><div class="dot current"></div><div class="cur">当前节点</div><div class="d">11月9日—13日</div><div class="n">光帆供应商版本评估</div></div>
+        <div class="col"><div class="dot"></div><div class="d">12月10日</div><div class="n">设计稿走查</div></div>
+        <div class="col"><div class="dot"></div><div class="d">12月25日—31日</div><div class="n">安卓全功能版本走查</div></div>
+    </div>
+  </div>
+</div>
+</section>
+
+<section id="deliverables">
+  <div class="section-head"><span class="num">03</span><h2>交付物</h2></div>
+  <article>
+    <h3>UE主要内容</h3>
+    <p>供应商软件（星芒和光帆）功能评估和耳机产品竞品参考</p>
+    <p style="overflow-wrap:anywhere"><a href="https://my.feishu.cn/wiki/J62ZwQQUli4VppkfWikcgpCHnbg" target="_blank" rel="noopener noreferrer">https://my.feishu.cn/wiki/J62ZwQQUli4VppkfWikcgpCHnbg</a></p>
+  </article>
+  <article style="margin-top:24px">
+    <h3>UI主要内容</h3>
+    <p>前期完成核心交互页面框架设计，后续由对方承接其他页面设计，我方主要负责产品核定。</p>
+  </article>
+</section>
+
+<section id="coordination"><div class="section-head"><span class="num">04</span><h2>项目相关人员</h2></div><div class="table-wrap"><table class="people"><thead><tr><th>部门 / 团队</th><th>相关人员</th><th>职责</th></tr></thead><tbody><tr><td>thinkplus</td><td>周律</td><td>项目主线推进；负责软件项目进度及 SPM 工作，牵头软件名称内部汇报确认，推动安全审核纳入项目计划并执行。</td></tr><tr><td rowspan="3">来酷</td><td>杨戬</td><td>负责软件开发与测试工作。</td></tr><tr><td>陈嫣嫣</td><td>参与项目主线推进，负责上架准备，并协助软件项目推进。</td></tr><tr><td>朱国用</td><td>协助软件项目进度及 SPM 相关工作。</td></tr><tr><td rowspan="2">设计中心</td><td>刘水秀</td><td>负责 UI 视觉设计，推进视觉 GUI 内部评审及交付评审。</td></tr><tr><td>燕霞</td><td>负责用户体验分析、走查。</td></tr></tbody></table></div></section>
+
+<section class="sources" id="sources"><p>资料来源：<a href="./thinkplus-app-上线时间轴汇总.html">原始上线时间轴</a>、<a href="./thinkplus后续计划.txt">thinkplus 后续计划</a>及项目补充说明。</p></section>
+</main><footer><span>thinkplus App / 项目概览</span><span>整理日期 2026.11.18 · 项目讨论稿</span></footer>
+</body>
+</html>
