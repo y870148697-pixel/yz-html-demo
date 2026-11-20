@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>thinkplus APP 上线时间轴（汇总）</title>
+<style>
+  :root{--green:#16a05f;--green-d:#0e7a45;--red:#d93025;
+        --ink:#222;--muted:#8a8a8a;--line:#dedede;--bg:#fff;}
+  *{box-sizing:border-box;}
+  body{margin:0;font-family:"PingFang SC","Microsoft YaHei",system-ui,-apple-system,Segoe UI,Roboto,sans-serif;
+       background:var(--bg);color:var(--ink);padding:36px 30px 64px;}
+  .wrap{max-width:1180px;margin:0 auto;}
+
+  header{display:flex;align-items:center;gap:12px;margin-bottom:2px;}
+  .logo{width:30px;height:30px;display:grid;grid-template-columns:1fr 1fr;grid-template-rows:1fr 1fr;gap:2px;}
+  .logo i{background:var(--green);border-radius:2px;}
+  h1{font-size:22px;margin:0;color:#111;font-weight:700;letter-spacing:.5px;}
+  .sub{color:var(--muted);font-size:13px;margin:6px 0 6px 42px;}
+  .note{font-weight:700;color:#000;font-size:13.5px;margin:4px 0 0 42px;line-height:1.6;}
+
+  .block{margin-top:34px;}
+  .block-head{display:flex;align-items:baseline;gap:12px;padding-bottom:6px;border-bottom:1px solid #f0f0f0;}
+  .block-title{font-size:16px;font-weight:700;color:#222;}
+  .block-title::before{content:"";display:inline-block;width:9px;height:9px;border-radius:50%;background:var(--green);margin-right:8px;}
+  .block-owner{font-size:12px;color:var(--muted);}
+  .block-owner b{color:#555;font-weight:600;}
+
+  .tl{position:relative;margin-top:22px;}
+  .axis{position:absolute;top:8px;left:3%;right:3%;height:2px;background:var(--line);}
+  .cols{display:flex;position:relative;z-index:1;}
+  .col{flex:1;min-width:0;padding:0 5px;text-align:center;}
+  .dot{position:relative;width:15px;height:15px;margin:0 auto;border-radius:50%;background:#fff;border:2px solid var(--green);}
+  .dot::after{content:"";position:absolute;inset:3px;border-radius:50%;background:var(--green);}
+  .dot.star{border-color:var(--red);}
+  .dot.star::after{background:var(--red);}
+  .dot.current{border-color:var(--green-d);box-shadow:0 0 0 3px #fff,0 0 0 5.5px rgba(22,160,95,.24);}
+  .dot.current::after{background:var(--green-d);}
+  .cur{display:inline-block;font-size:10.5px;color:#fff;background:var(--green);border-radius:3px;padding:1px 7px;font-weight:600;margin-top:9px;}
+  .d{font-weight:700;color:var(--green);font-size:12px;margin-top:11px;}
+  .cur + .d{margin-top:4px;}
+  .n{color:#333;font-size:12.5px;margin-top:3px;line-height:1.4;}
+  .n.red{color:var(--red);font-weight:600;}
+
+  .legend{margin-top:30px;padding-top:14px;border-top:1px solid #eee;font-size:12px;color:var(--muted);}
+  .legend .r{color:var(--red);}
+  .legend .curdot{display:inline-block;width:10px;height:10px;border-radius:50%;background:#fff;border:2px solid var(--green);
+                  box-shadow:0 0 0 2px #fff,0 0 0 4px rgba(22,160,95,.24);margin:0 3px 0 8px;vertical-align:-1px;}
+
+</style>
+</head>
+<body>
+<div class="wrap">
+  <header>
+    <div class="logo"><i></i><i></i><i></i><i></i></div>
+    <h1>thinkplus APP 上线时间轴</h1>
+  </header>
+  <div class="sub">Q3 重点工作 · 目标 2027年1月31日 全端上线（Android 1月15日 / iOS 1月31日）</div>
+  <div class="note">协作内容：我方前期做核心交互页面框架设计，后续由对方做其他页面的设计，我们主要做产品核定</div>
+
+  <div class="block">
+    <div class="block-head">
+      <span class="block-title">主线进度</span>
+      <span class="block-owner"><b>负责人：</b>thinkplus·周律 / 天禧酷联·陈嫣嫣</span>
+    </div>
+    <div class="tl"><div class="axis"></div><div class="cols"><div class="col"><div class="dot"></div><div class="d">9月25日前</div><div class="n">项目评估</div></div><div class="col"><div class="dot"></div><div class="d">9月30日</div><div class="n">PKO</div></div><div class="col"><div class="dot"></div><div class="d">10月22日</div><div class="n">交互方案提交</div></div><div class="col"><div class="dot"></div><div class="d">10月30日</div><div class="n">交互设计评审汇报</div></div><div class="col"><div class="dot current"></div><div class="cur">当前</div><div class="d">11月25日</div><div class="n">Android测试α版本进入</div></div><div class="col"><div class="dot"></div><div class="d">12月15日</div><div class="n">iOS测试α版本进入</div></div><div class="col"><div class="dot"></div><div class="d">12月30日</div><div class="n">Android正式版提测</div></div><div class="col"><div class="dot star"></div><div class="d">1月15日</div><div class="n red">Android版本上架</div></div><div class="col"><div class="dot"></div><div class="d">1月31日</div><div class="n">iOS版本上架</div></div></div></div>
+  </div>
+
+  <div class="block">
+    <div class="block-head">
+      <span class="block-title">UI / UE</span>
+      <span class="block-owner"><b>负责人：</b>设计中心·刘水秀</span>
+    </div>
+    <div class="tl"><div class="axis"></div><div class="cols"><div class="col"><div class="dot"></div><div class="d">9月30日</div><div class="n">UI/UE设计启动</div></div><div class="col"><div class="dot"></div><div class="d">10月20日</div><div class="n">交互设计提案</div></div><div class="col"><div class="dot"></div><div class="d">11月4日</div><div class="n">确定产品架构</div></div><div class="col"><div class="dot current"></div><div class="cur">当前</div><div class="d">11月20日</div><div class="n">视觉GUI评审</div></div><div class="col"><div class="dot"></div><div class="d">12月4日</div><div class="n">核心场景页面输出</div></div><div class="col"><div class="dot"></div><div class="d">12月13日</div><div class="n">设计UI交付</div></div><div class="col"><div class="dot star"></div><div class="d">12月25日</div><div class="n red">用户体验评审</div></div></div></div>
+  </div>
+
+  <div class="block">
+    <div class="block-head">
+      <span class="block-title">软件开发 / 测试</span>
+      <span class="block-owner"><b>负责人：</b>天禧酷联·杨戬</span>
+    </div>
+    <div class="tl"><div class="axis"></div><div class="cols"><div class="col"><div class="dot"></div><div class="d">10月20日</div><div class="n">完成接口定义</div></div><div class="col"><div class="dot"></div><div class="d">10月22日</div><div class="n">启动coding</div></div><div class="col"><div class="dot current"></div><div class="cur">当前</div><div class="d">11月15日</div><div class="n">完成智享家APP框架码</div></div><div class="col"><div class="dot"></div><div class="d">11月20日</div><div class="n">完成第三方&amp;Android/iOS SDK编码联调</div></div><div class="col"><div class="dot"></div><div class="d">11月30日</div><div class="n">启动申请SSRB</div></div><div class="col"><div class="dot star"></div><div class="d">12月25日</div><div class="n red">完成软件全功能开发</div></div><div class="col"><div class="dot"></div><div class="d">1月15日</div><div class="n">完成软件全功能测试</div></div></div></div>
+  </div>
+
+  <div class="block">
+    <div class="block-head">
+      <span class="block-title">上架准备</span>
+      <span class="block-owner"><b>负责人：</b>天禧酷联·陈嫣嫣</span>
+    </div>
+    <div class="tl"><div class="axis"></div><div class="cols"><div class="col"><div class="dot"></div><div class="d">10月25日</div><div class="n">软件著作权登记启动</div></div><div class="col"><div class="dot current"></div><div class="cur">当前</div><div class="d">11月30日</div><div class="n">工信部备案启动</div></div><div class="col"><div class="dot"></div><div class="d">12月15日</div><div class="n">工信部备案完成</div></div><div class="col"><div class="dot"></div><div class="d">12月25日</div><div class="n">软件著作权登记证</div></div><div class="col"><div class="dot"></div><div class="d">1月15日</div><div class="n">Android版本上架申请</div></div><div class="col"><div class="dot star"></div><div class="d">1月20日</div><div class="n red">SSRB审核完毕</div></div><div class="col"><div class="dot"></div><div class="d">1月25日</div><div class="n">iOS版本上架申请</div></div></div></div>
+  </div>
+
+  <div class="legend">注：<span class="r">红色 = 关键节点（原图红色星标）</span>　·　<span class="curdot"></span>= 当前节点（当前进度 11月初）　·　数据来源：Q3 重点工作 thinkplus APP 上线图（第 7 页）</div>
+</div>
+</body>
+</html>
